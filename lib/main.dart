@@ -2,7 +2,7 @@ import 'package:dwm_flutter_state_management/bloc/counter.withBloc.dart';
 import 'package:dwm_flutter_state_management/bloc/counter.withCubit.dart';
 import 'package:dwm_flutter_state_management/pages/counter.page.withCubit.dart';
 import 'package:dwm_flutter_state_management/pages/counter.page.withbloc.dart';
-import 'package:dwm_flutter_state_management/pages/counter.page.withprovider.dart';
+import 'package:dwm_flutter_state_management/pages/counter.page.withProvider.dart';
 import 'package:dwm_flutter_state_management/pages/home.page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

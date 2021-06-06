@@ -1,4 +1,4 @@
-import 'package:dwm_flutter_state_management/provider/counter.withprovider.state.dart';
+import 'package:dwm_flutter_state_management/provider/counter.withProvider.state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
