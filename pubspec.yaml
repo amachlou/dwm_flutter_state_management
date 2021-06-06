@@ -22,6 +22,8 @@ environment:
 
 dependencies:
   provider:
+  bloc:
+  flutter_bloc:
   flutter:
     sdk: flutter
 

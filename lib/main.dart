@@ -1,8 +1,9 @@
+import 'package:dwm_flutter_state_management/bloc/counter.withCubit.dart';
+import 'package:dwm_flutter_state_management/pages/counter.page.withCubit.dart';
 import 'package:dwm_flutter_state_management/pages/counter.page.withprovider.dart';
 import 'package:dwm_flutter_state_management/pages/home.page.dart';
-import 'package:dwm_flutter_state_management/provider/counter.withprovider.state.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'pages/counter.page.dart';
 
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MultiProvider(
+    return MultiBlocProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => CounterWithProviderState())
+        BlocProvider(create: (context) => CounterWithCubit(),)
       ],
       child: MaterialApp(
         theme: ThemeData(
@@ -25,8 +26,9 @@ class MyApp extends StatelessWidget {
           "/home": (context) => HomePage(),
           "/counter": (context) => CounterPage(),
           "/counterWithProvider": (context) => CounterPageWithProvider(),
+          "/counterWithBloc": (context) => CounterPageWithCubit(),
         },
-          initialRoute: "/counterWithProvider",
+          initialRoute: "/counterWithBloc",
         home: CounterPage()
       ),
     );
