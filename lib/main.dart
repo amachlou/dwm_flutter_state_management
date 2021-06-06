@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
           "/home": (context) => HomePage(),
           "/counter": (context) => CounterPage(),
           "/counterWithProvider": (context) => CounterPageWithProvider(),
-          "/counterWithBloc": (context) => CounterPageWithCubit(),
+          "/counterWithCubit": (context) => CounterPageWithCubit(),
         },
-          initialRoute: "/counterWithBloc",
+          initialRoute: "/counterWithCubit",
         home: CounterPage()
       ),
     );
