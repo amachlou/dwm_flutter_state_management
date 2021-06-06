@@ -7,10 +7,10 @@ class CounterPageWithCubit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Counter page with BLoC'),),
+      appBar: AppBar(title: Text('Counter page with Cubit'),),
       body: Center(
         child: BlocBuilder<CounterWithCubit, int>(
-            builder: (context, state) => Text("Counter with BLoC: ${state}", style: TextStyle(fontSize: 30),)
+            builder: (context, state) => Text("Counter with Cubit: ${state}", style: TextStyle(fontSize: 30),)
         ),
       ),
       floatingActionButton: Row(
